@@ -1,14 +1,15 @@
-This repository was mounted for using a neural network to predict future behavior in agromet. 
+# Machine Learning for Gap Filling
+The goal of this repository is showing how to use **data science** and, particularly, **Machine Learning** to predict future behavior.
 
-This work was previously made in Matlab, but my purpose is to change to a phyton environment. 
+For that I use a 1 year time serie of agromet data. This is the file PRE2013.xlsx.
 
-...
+I previously did this work in Matlab and published in 2014. At that time, Machine Learning algorithms were very "stripped", in the sense that you yourself had to do anything: create an ANN, test with different layers, choose the optimus neurons per layer, choose the non-linear function for each neuron, check the convergence of the gradient descent algorithm, ... Nowadays, using Python, mostly everything comes by default.
 
-The option read_excel from pandas package uses internally a library called xlrd that needs to be installed. So, install it by typing on the terminal:
-```shell
-pip install openpyxl
-```
-and also install the numpy package:
-```shell
-pip install numpy
-```
+This brings the inconvenience of doing the stuff without knowing what it is going on under the hood, but, at least, it quite facilitates the use of Machine Learning. But in any way, that is another history...
+
+Following the standard procedure, I splitted into 4 jupyter notebooks:
+1. data_visualization nb, to plot some graphs just to get to know the data before any kind of processing.
+2. data_preprocessing nb, to prepare the data for processing.
+3. data_processing nb, in which I apply the regression model.
+4. data_prediction nb, in which I use the model to predict future behavior and compare with the real data.
+
