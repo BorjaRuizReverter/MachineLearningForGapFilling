@@ -13,5 +13,5 @@ Following the standard procedure, I splitted into 4 jupyter notebooks:
 3. data_processing nb, in which I apply the regression model.
 4. data_prediction nb, in which I use the model to predict future behavior and compare with the real data.
 
-As a result, the model predicts acceptably well (R² = 0.6) the real data during the last month of 2013.
-<img src="/assets/output.png"/>
+As a result, the model predicts acceptably well (R = 0.53) the real data during the last month of 2013.
+<img src="/assets/output.jpg"/>
